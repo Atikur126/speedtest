@@ -2,14 +2,20 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>SpeedTest by Atik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedTest | Atikur Rahman</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        body { font-family: 'Arial', sans-serif; text-align: center; background: #f4f4f9; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
     </style>
 </head>
 <body>
-    <h1>আমার ইন্টারনেট স্পিডটেস্ট</h1>
-    <div id="speedtest"></div>
-    <script src="https://speed.cloudflare.com/celestia.js"></script>
+    <div class="container">
+        <h1>ইন্টারনেট স্পিড টেস্ট</h1>
+        <p>আপনার বর্তমান ইন্টারনেটের গতি যাচাই করুন</p>
+        <div id="speedtest"></div>
+        <script src="https://speed.cloudflare.com/celestia.js"></script>
+    </div>
 </body>
 </html>
