@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SpeedTest | Atikur Rahman</title>
+    <title>Internet Speed Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://cdn.jsdelivr.net/npm/librespeed-speedtest@latest/speedtest.min.js"></script>
-    <style>
-        body { background: #000; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        #speedtest { width: 100%; max-width: 600px; }
-        h1 { margin-bottom: 20px; font-weight: 300; }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/librespeed-speedtest@latest/speedtest.css">
 </head>
 <body>
-    <h1>Internet Speed Test</h1>
     <div id="speedtest"></div>
     <script>
+        // Speedtest কনফিগারেশন
         var s = new Speedtest();
-        s.setParameter("telemetryLevel", "none"); // Track korbe na, just test korbe
+        s.setParameter("telemetryLevel", "none"); 
         s.start();
     </script>
 </body>
