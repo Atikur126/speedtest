@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedTest | Atikur Rahman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/librespeed-speedtest@latest/speedtest.min.js"></script>
     <style>
-        body { font-family: 'Arial', sans-serif; text-align: center; background: #f4f4f9; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
+        body { background: #000; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        #speedtest { width: 100%; max-width: 600px; }
+        h1 { margin-bottom: 20px; font-weight: 300; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>ইন্টারনেট স্পিড টেস্ট</h1>
-        <p>আপনার বর্তমান ইন্টারনেটের গতি যাচাই করুন</p>
-        <div id="speedtest"></div>
-        <script src="https://speed.cloudflare.com/celestia.js"></script>
-    </div>
+    <h1>Internet Speed Test</h1>
+    <div id="speedtest"></div>
+    <script>
+        var s = new Speedtest();
+        s.setParameter("telemetryLevel", "none"); // Track korbe na, just test korbe
+        s.start();
+    </script>
 </body>
 </html>
